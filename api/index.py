@@ -10,7 +10,7 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # تحديد مسار مجلد templates لأنه موجود في المجلد الرئيسي خارج api
-app = Flask(__name__, template_folder="../templates")
+app = Flask(__name__, template_folder="/templates")
 
 BASE_URL = "https://result.sd/"
 RESULT_URL = "https://result.sd/result/"
